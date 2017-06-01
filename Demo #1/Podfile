@@ -1,0 +1,7 @@
+source 'https://github.com/Cocoapods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+
+target 'CFC' do
+   pod 'AFNetworking'
+end

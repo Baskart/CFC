@@ -16,6 +16,7 @@
 		646A98521EDE7E1D00F42C30 /* SecondTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A98511EDE7E1D00F42C30 /* SecondTableCell.swift */; };
 		646A98541EDE7E2F00F42C30 /* ThirdTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A98531EDE7E2F00F42C30 /* ThirdTableCell.swift */; };
 		646A98561EDE8D3C00F42C30 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A98551EDE8D3C00F42C30 /* DetailVC.swift */; };
+		AC8C315E674E9FE0EE082955 /* Pods_CFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FF06C434C00BE0C9818BDE /* Pods_CFC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		646A98511EDE7E1D00F42C30 /* SecondTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTableCell.swift; sourceTree = "<group>"; };
 		646A98531EDE7E2F00F42C30 /* ThirdTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdTableCell.swift; sourceTree = "<group>"; };
 		646A98551EDE8D3C00F42C30 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		8AC2B59FFC15771857191816 /* Pods-CFC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CFC.release.xcconfig"; path = "Pods/Target Support Files/Pods-CFC/Pods-CFC.release.xcconfig"; sourceTree = "<group>"; };
+		A4FF06C434C00BE0C9818BDE /* Pods_CFC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CFC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFFBF97CE75E632CB790692 /* Pods-CFC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CFC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CFC/Pods-CFC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8C315E674E9FE0EE082955 /* Pods_CFC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0572CC446A4788985585246F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAFFBF97CE75E632CB790692 /* Pods-CFC.debug.xcconfig */,
+				8AC2B59FFC15771857191816 /* Pods-CFC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		646A982F1EDE7BAF00F42C30 = {
 			isa = PBXGroup;
 			children = (
 				646A983A1EDE7BAF00F42C30 /* CFC */,
 				646A98391EDE7BAF00F42C30 /* Products */,
+				0572CC446A4788985585246F /* Pods */,
+				97D5B189403D008BA93961FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,13 +83,21 @@
 				646A984F1EDE7CE200F42C30 /* FIrstTableCell.swift */,
 				646A98511EDE7E1D00F42C30 /* SecondTableCell.swift */,
 				646A98531EDE7E2F00F42C30 /* ThirdTableCell.swift */,
+				646A98551EDE8D3C00F42C30 /* DetailVC.swift */,
 				646A983F1EDE7BAF00F42C30 /* Main.storyboard */,
 				646A98421EDE7BAF00F42C30 /* Assets.xcassets */,
 				646A98441EDE7BAF00F42C30 /* LaunchScreen.storyboard */,
 				646A98471EDE7BAF00F42C30 /* Info.plist */,
-				646A98551EDE8D3C00F42C30 /* DetailVC.swift */,
 			);
 			path = CFC;
+			sourceTree = "<group>";
+		};
+		97D5B189403D008BA93961FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4FF06C434C00BE0C9818BDE /* Pods_CFC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 646A984A1EDE7BAF00F42C30 /* Build configuration list for PBXNativeTarget "CFC" */;
 			buildPhases = (
+				D27814946CBBB542A1581F7B /* [CP] Check Pods Manifest.lock */,
 				646A98341EDE7BAF00F42C30 /* Sources */,
 				646A98351EDE7BAF00F42C30 /* Frameworks */,
 				646A98361EDE7BAF00F42C30 /* Resources */,
+				FABBD17EC160E08951C3985A /* [CP] Embed Pods Frameworks */,
+				4A1049F9BF09A025B8F779EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A1049F9BF09A025B8F779EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CFC/Pods-CFC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D27814946CBBB542A1581F7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FABBD17EC160E08951C3985A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CFC/Pods-CFC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		646A98341EDE7BAF00F42C30 /* Sources */ = {
@@ -274,24 +349,28 @@
 		};
 		646A984B1EDE7BAF00F42C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAFFBF97CE75E632CB790692 /* Pods-CFC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CFC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wd.CFC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "#import <AFNetworking/AFNetworking.h>";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		646A984C1EDE7BAF00F42C30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC2B59FFC15771857191816 /* Pods-CFC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CFC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wd.CFC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "#import <AFNetworking/AFNetworking.h>";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
